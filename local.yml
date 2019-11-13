@@ -8,7 +8,7 @@
         flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
     - name: Install flatpak packages
       flatpak:
-        name: {{item}}
+        name: "{{item}}"
         state: present
         method: system
       with_items:
