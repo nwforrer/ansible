@@ -1,0 +1,15 @@
+- name: Add the flathub flatpak repository
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+- name: Install flatpak packages
+  flatpak:
+    name: "{{item}}"
+    state: present
+    method: system
+  with_items:
+    - com.valvesoftware.Steam
+    - com.spotify.Client
+    - com.jetbrains.IntelliJ-IDEA-Community
+    - org.gnu.emacs

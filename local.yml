@@ -1,15 +1,6 @@
 - hosts: localhost
   become: true
   tasks:
-    - name: Add the flathub flatpak repository
-      flatpak_remote:
-        name: flathub
-        state: present
-        flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
-    - name: Install flatpak packages
-      flatpak:
-        name: "{{item}}"
-        state: present
-        method: system
-      with_items:
-        - com.valvesoftware.Steam
+    - include: tasks/users.yml
+    - include: tasks/cron.yml
+    - include: tasks/packages.yml
