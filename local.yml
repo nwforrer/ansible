@@ -11,5 +11,5 @@
         name: {{item}}
         state: present
         method: system
-        with_items:
-          - com.valvesoftware.Steam
+      with_items:
+        - com.valvesoftware.Steam
