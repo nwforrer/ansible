@@ -12,4 +12,9 @@
     - com.valvesoftware.Steam
     - com.spotify.Client
     - com.jetbrains.IntelliJ-IDEA-Community
-    - org.gnu.emacs
+- name: Install packages
+  dnf:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - emacs
