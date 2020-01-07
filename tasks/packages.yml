@@ -12,9 +12,43 @@
     - com.valvesoftware.Steam
     - com.spotify.Client
     - com.jetbrains.IntelliJ-IDEA-Community
-- name: Install packages
+
+- name: Install dev packages
+  dnf:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - clang
+    - clang-devel
+    - llvm
+    - llvm-devel
+    - cmake
+    - gcc-c++
+    - make
+    - python3-devel
+    - zsh
+
+- name: Install applications
   dnf:
     name: "{{item}}"
     state: present
   with_items:
     - emacs
+    - vim-X11
+    - irssi
+    - terminator
+    - pass
+
+- name: Install window manager and dependencies
+  dnf:
+    name: "{{item}}"
+    state: present
+  with_items:
+    - i3
+    - i3lock
+    - i3status
+    - i3-doc
+    - powerline
+    - powerline-fonts
+    - fontawesome-fonts
+    - arc-theme

@@ -1,0 +1,10 @@
+- name: install Doom Emacs
+  git:
+    repo: 'https://github.com/hlissner/doom-emacs.git'
+    dest: /home/nforrer/.emacs.d
+    version: develop
+- name: install private Doom Emacs configs
+  git:
+    repo: 'https://github.com/nwforrer/doom-emacs-config.git'
+    dest: /home/nforrer/.doom.d
+    version: master
