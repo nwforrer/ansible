@@ -12,6 +12,7 @@
     - com.valvesoftware.Steam
     - com.spotify.Client
     - com.jetbrains.IntelliJ-IDEA-Community
+    - org.godotengine.Godot
 
 - name: Install dev packages
   dnf:
@@ -27,6 +28,9 @@
     - make
     - python3-devel
     - zsh
+    - java-1.8.0-openjdk-devel
+    - SDL2-devel
+    - glew-devel
 
 - name: Install applications
   dnf:
