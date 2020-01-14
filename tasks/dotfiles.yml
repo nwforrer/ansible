@@ -3,8 +3,9 @@
     repo: 'https://github.com/hlissner/doom-emacs.git'
     dest: /home/nforrer/.emacs.d
     version: develop
+    update: no
 - name: install private Doom Emacs configs
   git:
-    repo: 'https://github.com/nwforrer/doom-emacs-config.git'
+    repo: 'https://github.com/nwforrer/doom.d.git'
     dest: /home/nforrer/.doom.d
     version: master
