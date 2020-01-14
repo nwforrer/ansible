@@ -27,4 +27,5 @@
 - name: Install window manager and dependencies
   dnf:
     state: present
-    name: ['i3', 'i3lock', 'i3status', 'i3-doc', 'powerline', 'powerline-fonts', 'fontawesome-fonts', 'arc-theme']
+    name: ['i3', 'i3lock', 'i3status', 'i3-doc', 'powerline', 'powerline-fonts',
+  'fontawesome-fonts', 'arc-theme', 'playerctl']
