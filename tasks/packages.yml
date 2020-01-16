@@ -16,7 +16,8 @@
 - name: Install dev packages
   dnf:
     state: present
-    name: ['clang', 'clang-devel', 'llvm', 'llvm-devel', 'cmake', 'gcc-c++', 'make', 'python3-devel', 'zsh', 'java-1.8.0-openjdk-devel', 'SDL2-devel', 'glew-devel']
+    name: ['clang', 'clang-devel', 'llvm', 'llvm-devel', 'cmake', 'gcc-c++',
+  'make', 'python3-devel', 'zsh', 'java-1.8.0-openjdk-devel', 'java-11-openjdk-devel', 'SDL2-devel', 'glew-devel']
 
 - name: Install applications
   dnf:
