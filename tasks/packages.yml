@@ -28,4 +28,4 @@
   dnf:
     state: present
     name: ['i3', 'i3lock', 'i3status', 'i3-doc', 'powerline', 'powerline-fonts',
-  'fontawesome-fonts', 'arc-theme', 'playerctl']
+  'fontawesome-fonts', 'arc-theme', 'playerctl', 'blueman']
