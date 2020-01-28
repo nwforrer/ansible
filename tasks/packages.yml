@@ -22,7 +22,8 @@
 - name: Install applications
   dnf:
     state: present
-    name: ['emacs', 'vim-X11', 'vim-powerline', 'irssi', 'terminator', 'pass', 'moc']
+    name: ['emacs', 'vim-X11', 'vim-powerline', 'irssi', 'terminator', 'pass',
+  'moc', 'deja-dup']
 
 - name: Install window manager and dependencies
   dnf:
