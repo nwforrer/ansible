@@ -6,6 +6,8 @@
     update: no
 - name: install private Doom Emacs configs
   git:
-    repo: 'https://github.com/nwforrer/doom.d.git'
+    repo: 'git@github.com:nwforrer/doom.d.git'
     dest: /home/nforrer/.doom.d
     version: master
+    key_file: '/home/nforrer/.ssh/id_rsa'
+    accept_hostkey: yes
