@@ -12,7 +12,6 @@
     - com.valvesoftware.Steam
     - com.spotify.Client
     - org.godotengine.Godot
-    - org.gnu.emacs
 
 - name: Install dev packages
   dnf:
@@ -24,7 +23,7 @@
   dnf:
     state: present
     name: ['vim-X11', 'vim-powerline', 'irssi', 'terminator', 'pass',
-  'moc', 'deja-dup']
+  'moc', 'deja-dup', 'emacs']
 
 - name: Install window manager and dependencies
   dnf:
